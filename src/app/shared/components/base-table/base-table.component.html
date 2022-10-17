@@ -1,0 +1,19 @@
+<nz-table #basicTable [nzPageSize]="10" [nzScroll]="{y: '500px'}" [nzData]="data">
+  <thead>
+    <tr *ngIf="type === 'employees'">
+      <th *ngFor="let column of 'employee.table.header' | translate;let i = index;trackBy: trackByFn" [nzWidth]="columns[i].colWidth" >
+        {{column}}
+      </th>
+    </tr>
+    <tr *ngIf="type === 'projects'">
+      <th *ngFor="let column of 'projects.table.header' | translate;let i = index;trackBy: trackByFn" [nzWidth]="columns[i].colWidth" >
+        {{column}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of basicTable.data;trackBy: trackByFn" (click)="redirectToEdit(row)">
+      <td *ngFor="let ceil of columns;trackBy: trackByFn" > {{row[ceil.fieldKey]}}</td>
+    </tr>
+  </tbody>
+</nz-table>

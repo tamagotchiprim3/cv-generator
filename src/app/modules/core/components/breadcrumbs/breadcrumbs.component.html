@@ -1,0 +1,8 @@
+<nz-breadcrumb>
+  <nz-breadcrumb-item *ngFor="let breadcrumb of breadcrumbs ; let i = index;trackBy: trackByFn" [routerLink]="breadcrumb.url" (click)="clearBreadcrumbs(i, breadcrumb)">
+    <a>{{breadcrumb.breadcrumbName | translate}}</a>
+  </nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<div class="breadcrumb-title">{{breadcrumbs[breadcrumbs.length - 1].title | translate}}</div>
+<div class="breadcrumb-description">{{breadcrumbs[breadcrumbs.length - 1].description | translate}}</div>

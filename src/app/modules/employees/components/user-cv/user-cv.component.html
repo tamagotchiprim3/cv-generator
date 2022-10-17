@@ -1,0 +1,68 @@
+<div class="cvList">
+  <nz-tabset
+    [(nzSelectedIndex)]="selectedIndex"
+    nzType="editable-card"
+    (nzAdd)="createVirtualCv()"
+    (nzClose)="deleteVirtualCv($event)"
+    nzTabPosition="left">
+
+    <nz-tab *ngFor="let cv of getVirtualCvList().controls;let i = index;trackBy: trackByFn" nzClosable [nzTitle]="('employee.cv' | translate)+ ' ' + (i + 1)">
+      <button nz-button (click)="downloadPDF()">{{'buttons.downloadPDF' | translate}}</button>
+      <form [formGroup]="getAsFormGroup(cv)">
+        <nz-collapse>
+          <nz-collapse-panel [nzHeader]="'employee.general.formName' | translate">
+            <app-user-cv-general-form formControlName="general"></app-user-cv-general-form>
+          </nz-collapse-panel>
+        </nz-collapse>
+
+        <nz-container formArrayName="education">
+          <button nz-button  (click)="addEducation(i)">{{ 'buttons.addEducation' | translate}}</button>
+        <nz-collapse>
+            <nz-collapse-panel *ngFor="let control of getFormArray('education', i).controls;let i = index; trackBy: trackByFn"
+            [nzHeader]="('employee.education.formName' | translate)+ ' ' + (i + 1)">
+              <app-user-cv-education-form formControlName="{{i}}"></app-user-cv-education-form>
+            </nz-collapse-panel>
+          </nz-collapse>
+        </nz-container>
+
+        <nz-container formArrayName="foreignLanguage">
+          <button nz-button  (click)="addLanguage(i)">{{ 'buttons.addLanguage' | translate}}</button>
+        <nz-collapse>
+            <nz-collapse-panel *ngFor="let control of getFormArray('foreignLanguage', i).controls; let i = index; trackBy: trackByFn"
+            [nzHeader]="('employee.languages.formName' | translate)+ ' ' + (i + 1)">
+              <app-user-cv-languages-form formControlName="{{i}}"></app-user-cv-languages-form>
+            </nz-collapse-panel>
+          </nz-collapse>
+        </nz-container>
+
+        <nz-collapse class='resume-collapse'>
+          <nz-collapse-panel [nzHeader]="'employee.resume.formName' | translate">
+            <app-user-cv-resume-form formControlName="resume"></app-user-cv-resume-form>
+          </nz-collapse-panel>
+        </nz-collapse>
+
+        <nz-container formArrayName="projects">
+          <app-select-input [formControl]="selectedProject"
+          label="{{ 'employee.controls.selectProject.label' | translate }}"
+          placeholder="{{ 'employee.controls.selectProject.placeholder' | translate }}"
+          errorTip="{{ 'employee.controls.selectProject.errorTip' | translate }}">
+          </app-select-input>
+          <button nz-button  (click)="addProject(i)">{{ 'buttons.addProject' | translate}}</button>
+        <nz-collapse>
+            <nz-collapse-panel *ngFor="let control of getFormArray('projects', i).controls; let i = index; trackBy: trackByFn"
+            [nzHeader]="('employee.projects.formName' | translate) + ' '+ (i + 1)">
+              <app-user-cv-project-form formControlName="{{i}}"></app-user-cv-project-form>
+            </nz-collapse-panel>
+          </nz-collapse>
+        </nz-container>
+      </form>
+    </nz-tab>
+  </nz-tabset>
+</div>
+
+
+
+
+
+
+

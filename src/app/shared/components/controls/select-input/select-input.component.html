@@ -1,0 +1,11 @@
+<label>
+  <span> {{label}}</span>
+</label>
+
+<nz-select
+  class="select"
+  nzShowSearch
+  [formControl]="control"
+  [nzPlaceHolder]="placeholder">
+  <nz-option *ngFor="let item of projectList | async; trackBy: trackByFn" [nzLabel]="item.name" [nzValue]="item"></nz-option>
+</nz-select>

@@ -1,0 +1,4 @@
+export interface IRouteConfig {
+  path: string;
+  fullpath: string;
+}

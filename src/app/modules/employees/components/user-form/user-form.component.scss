@@ -1,0 +1,25 @@
+:host {
+  ::ng-deep {
+    .ant-tabs {
+      height: 90%;
+      width: 100%;
+    }
+    .ant-tabs-nav {
+      margin-top: 0px;
+    }
+
+    .ant-tabs-content-holder {
+      overflow: auto;
+    }
+  }
+}
+.buttons {
+  height: 10%;
+  padding-top: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+button:first-child {
+  margin-right: 20px;
+}

@@ -1,0 +1,16 @@
+<form nz-form [formGroup]="cvEducationForm">
+  <app-text-input
+    formControlName="establishment"
+    label="{{ 'employee.education.establishment.label' | translate }}"
+    placeholder="{{ 'employee.education.establishment.placeholder' | translate }}"
+    errorTip="{{ 'employee.education.establishment.errorTip' | translate }}">
+  </app-text-input>
+
+  <app-text-input
+    formControlName="profession"
+    label="{{ 'employee.education.profession.label' | translate }}"
+    placeholder="{{ 'employee.education.profession.placeholder' | translate }}"
+    errorTip="{{ 'employee.education.profession.errorTip' | translate }}">
+  </app-text-input>
+
+</form>

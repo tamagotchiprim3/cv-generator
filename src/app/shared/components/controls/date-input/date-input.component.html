@@ -1,0 +1,16 @@
+<label>
+  <span> {{label}}</span>
+</label>
+
+<nz-date-picker
+  nzFormat="yyyy-MM-dd"
+  class="date-input"
+  [nzPlaceHolder]="placeholder"
+  [formControl]="control"
+  (blur)="onTouched()">
+</nz-date-picker>
+
+<label>
+  <span class="error-tip" *ngIf="control.invalid && control.touched">{{errorTip}}</span>
+</label>
+

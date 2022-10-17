@@ -1,0 +1,265 @@
+{
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPass": "Forgot your password?",
+    "login": "Login"
+  },
+  "core": {
+    "dashboard": "Dashboard",
+    "employees": "Employees",
+    "projects": "Projects",
+    "home": "Home"
+  },
+  "projects": {
+    "addProjects": "Add projects",
+    "table": {
+      "header": [
+        "First name",
+        "Second name",
+        "Team size",
+        "Specializations",
+        "Responsibilities"
+      ]
+    },
+    "controls": {
+      "name": {
+        "label": "First name",
+        "errorTip": "Please, specify a name",
+        "placeholder": "Enter your name"
+      },
+      "secondName": {
+        "label": "Second name",
+        "errorTip": "Please, specify a second name",
+        "placeholder": "Enter your second name"
+      },
+      "startDate": {
+        "label": "Start date",
+        "errorTip": "Please, specify a start date",
+        "placeholder": "Enter start date"
+      },
+      "endDate": {
+        "label": "End date",
+        "errorTip": "Please, specify a end date",
+        "placeholder": "Enter end date"
+      },
+      "teamSize": {
+        "label": "Team size",
+        "errorTip": "Please, specify a team size",
+        "placeholder": "Enter team size"
+      },
+      "description": {
+        "label": "Description",
+        "errorTip": "Please, specify a description",
+        "placeholder": "Enter description"
+      },
+      "tasksPerformed": {
+        "label": "Tasks performed",
+        "errorTip": "Please, specify who performed tasks",
+        "placeholder": "Who performed tasks"
+      },
+      "projectRoles": {
+        "label": "Project roles",
+        "errorTip": "Please, specify a project roles",
+        "placeholder": "Enter project roles"
+      },
+      "specializations": {
+        "label": "Specializations",
+        "errorTip": "Please, specify a specializations",
+        "placeholder": "Enter specializations"
+      },
+      "responsibilities": {
+        "label": "Responsibilities",
+        "errorTip": "Please, specify a responsibilities",
+        "placeholder": "Enter responsibilities"
+      }
+    }
+  },
+  "employee": {
+    "buttons": {
+      "addEmployee": "Add Employee"
+    },
+    "table": {
+      "header": ["First name", "Last name", "Email", "Department", "Skills"]
+    },
+    "info": "Info",
+    "cv": "Cv",
+    "general": {
+      "formName": "General",
+      "firstName": {
+        "label": "First name",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter your name"
+      },
+      "lastName": {
+        "label": "Last name",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter your last name"
+      },
+      "name": {
+        "label": "Name",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter a name"
+      }
+    },
+    "education": {
+      "formName": "Education",
+      "establishment": {
+        "label": "Establishment",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter your establishment"
+      },
+      "profession": {
+        "label": "Profession",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter your profession"
+      }
+    },
+    "languages": {
+      "formName": "Languages",
+      "name": {
+        "label": "Language",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter your language"
+      },
+      "everydayReadingLevel": {
+        "label": "Everyday reading level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      },
+      "everydayWritingLevel": {
+        "label": "Every writing level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      },
+      "everydaySpeakingLevel": {
+        "label": "Everyday speaking level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      },
+      "professionalReadingLevel": {
+        "label": "Profession reading level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      },
+      "professionalWritingLevel": {
+        "label": "Profession writing level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      },
+      "professionalSpeakingLevel": {
+        "label": "Profession speaking level",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Describe your skill"
+      }
+    },
+    "resume": {
+      "formName": "Resume",
+      "content": {
+        "label": "Content",
+        "errorTip": "Please, input a correct data",
+        "placeholder": "Enter a content"
+      }
+    },
+    "projects": {
+      "formName": "Project"
+    },
+    "controls": {
+      "firstName": {
+        "label": "First Name",
+        "errorTip": "Please, specify a correct name",
+        "placeholder": "Enter your name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "errorTip": "Please, specify a correct last name",
+        "placeholder": "Enter your last name"
+      },
+      "password": {
+        "label": "Password",
+        "errorTip": "Please, specify a correct password",
+        "placeholder": "Enter your password"
+      },
+      "email": {
+        "label": "Email",
+        "errorTip": "Please, specify a correct email",
+        "placeholder": "Enter your email"
+      },
+      "institution": {
+        "label": "Institution",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your institution"
+      },
+      "diplomaProfession": {
+        "label": "Diploma profession",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your diploma"
+      },
+      "skills": {
+        "label": "Skills",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your skills"
+      },
+      "role": {
+        "label": "Role",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your role"
+      },
+      "department": {
+        "label": "Department",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your department"
+      },
+      "languages": {
+        "label": "Languages",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Enter your languages"
+      },
+      "selectProject": {
+        "label": "Choose a project",
+        "errorTip": "Please, specify a correct data",
+        "placeholder": "Choose your project"
+      }
+    }
+  },
+  "buttons": {
+    "archive": "Archive",
+    "save": "Save",
+    "cancel": "Cancel",
+    "addProject": "Add project",
+    "addLanguage": "Add language",
+    "addEducation": "Add education",
+    "downloadPDF": "Download PDF"
+  },
+  "homeBreadcrumb": {
+    "name": "Home",
+    "title": "Home page",
+    "description": "home"
+  },
+  "projectPageBreadcrumb": {
+    "name": "Projects",
+    "title": "Projects list",
+    "description": "projects here"
+  },
+  "projectCreateBreadcrumb": {
+    "name": "Сreate",
+    "title": "Create project",
+    "description": "сreate your projects here"
+  },
+  "employeesPageBreadcrumb": {
+    "name": "Employees",
+    "title": "Employees list",
+    "description": "аll employees here"
+  },
+  "employeesCreateBreadcrumb": {
+    "name": "Create",
+    "title": "Create employee",
+    "description": "create your employee here"
+  },
+  "dashboardPageBreadcrumb": {
+    "name": "Dashboard",
+    "title": "Dashboard page",
+    "description": "Dashboard"
+  }
+}

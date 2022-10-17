@@ -1,0 +1,7 @@
+<div class="spinner-wrapper" *ngIf="spinnerCount">
+  <div class="spinner">
+    <nz-spin nzSimple nzSize="large"></nz-spin>
+  </div>
+</div>
+
+<app-form (saveEvent)="submit($event)" [formData]="project"></app-form>

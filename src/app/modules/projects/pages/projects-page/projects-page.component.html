@@ -1,0 +1,12 @@
+<div class="spinner-wrapper" *ngIf="spinnerCount">
+  <div class="spinner">
+    <nz-spin nzSimple nzSize="large"></nz-spin>
+  </div>
+</div>
+
+<div class="projects-add-action">
+  <button nz-button  nzType="primary" (click)="redirectToAdd()">{{'projects.addProjects' | translate}}</button>
+</div>
+
+<app-base-table [type]="pageType" [data]="apiData | async" [columns]="tableColumns" (redirectEvent)="redirectToEdit($event)"></app-base-table>
+

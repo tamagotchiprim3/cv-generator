@@ -1,0 +1,83 @@
+<div class="archive-data">
+  <button nz-button nzType="default">{{ 'buttons.archive' | translate}}</button>
+</div>
+
+<form nz-form [formGroup]="projectForm" nzLayout="vertical" class="createProjectFormContainer"  novalidate>
+
+  <div class="createProjectForm">
+    <app-text-input
+    formControlName="name"
+    label="{{ 'projects.controls.name.label' | translate }}"
+    placeholder="{{ 'projects.controls.name.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.name.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+    formControlName="secondName"
+    label="{{ 'projects.controls.secondName.label' | translate }}"
+    placeholder="{{ 'projects.controls.secondName.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.secondName.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-date-input
+    formControlName="startDate"
+    label="{{ 'projects.controls.startDate.label' | translate }}"
+    placeholder="{{ 'projects.controls.startDate.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.startDate.errorTip' | translate }}">
+    </app-date-input>
+
+    <app-date-input
+    formControlName="endDate"
+    label="{{ 'projects.controls.endDate.label' | translate }}"
+    placeholder="{{ 'projects.controls.endDate.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.endDate.errorTip' | translate }}">
+    </app-date-input>
+
+    <app-number-input
+    formControlName="teamSize"
+    label="{{ 'projects.controls.teamSize.label' | translate }}"
+    placeholder="{{ 'projects.controls.teamSize.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.teamSize.errorTip' | translate }}">
+    </app-number-input>
+
+    <app-textarea-input
+    formControlName="description"
+    label="{{ 'projects.controls.description.label' | translate }}"
+    placeholder="{{ 'projects.controls.description.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.description.errorTip' | translate }}">
+    </app-textarea-input>
+
+    <app-text-input
+    formControlName="tasksPerformed"
+    label="{{ 'projects.controls.tasksPerformed.label' | translate }}"
+    placeholder="{{ 'projects.controls.tasksPerformed.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.tasksPerformed.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-tree-select-input
+    formControlName="projectRoles"
+    label="{{ 'projects.controls.projectRoles.label' | translate }}"
+    placeholder="{{ 'projects.controls.projectRoles.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.projectRoles.errorTip' | translate }}">
+    </app-tree-select-input>
+
+    <app-tree-select-input
+    formControlName="specializations"
+    label="{{ 'projects.controls.specializations.label' | translate }}"
+    placeholder="{{ 'projects.controls.specializations.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.specializations.errorTip' | translate }}">
+    </app-tree-select-input>
+
+    <app-tree-select-input
+    formControlName="responsibilities"
+    label="{{ 'projects.controls.responsibilities.label' | translate }}"
+    placeholder="{{ 'projects.controls.responsibilities.placeholder' | translate }}"
+    errorTip="{{ 'projects.controls.responsibilities.errorTip' | translate }}">
+    </app-tree-select-input>
+  </div>
+
+  <div class="buttons">
+    <button nz-button nzType="primary" (click)="submit()">{{ 'buttons.save' | translate }}</button>
+    <button nz-button  (click)="cancel()">{{ 'buttons.cancel' | translate }}</button>
+  </div>
+</form>

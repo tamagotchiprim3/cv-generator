@@ -1,0 +1,80 @@
+<form nz-form [formGroup]="infoForm" class="createInfoFormContainer" novalidate>
+
+  <div class="createInfoForm">
+      <app-text-input
+      formControlName="firstName"
+      label="{{ 'employee.controls.firstName.label' | translate }}"
+      placeholder="{{ 'employee.controls.firstName.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.firstName.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+      formControlName="lastName"
+      label="{{ 'employee.controls.lastName.label' | translate }}"
+      placeholder="{{ 'employee.controls.lastName.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.lastName.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+    formControlName="password"
+      type="password"
+      [disable]="isEdit"
+      label="{{ 'employee.controls.password.label' | translate }}"
+      placeholder="{{ 'employee.controls.password.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.password.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+      formControlName="email"
+      type="email"
+      label="{{ 'employee.controls.email.label' | translate }}"
+      placeholder="{{ 'employee.controls.email.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.email.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+      formControlName="institution"
+      [disable]="true"
+      label="{{ 'employee.controls.institution.label' | translate }}"
+      placeholder="{{ 'employee.controls.institution.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.institution.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-text-input
+      formControlName="diplomaProfession"
+      [disable]="true"
+      label="{{ 'employee.controls.diplomaProfession.label' | translate }}"
+      placeholder="{{ 'employee.controls.diplomaProfession.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.diplomaProfession.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-tree-select-input
+      formControlName="skills"
+      label="{{ 'employee.controls.skills.label' | translate }}"
+      placeholder="{{ 'employee.controls.skills.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.skills.errorTip' | translate }}">>
+    </app-tree-select-input>
+
+    <app-tree-select-input
+      formControlName="role"
+      [multiple]="false"
+      label="{{ 'employee.controls.role.label' | translate }}"
+      placeholder="{{ 'employee.controls.role.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.role.errorTip' | translate }}">
+    </app-tree-select-input>
+
+    <app-text-input
+      formControlName="department"
+      label="{{ 'employee.controls.department.label' | translate }}"
+      placeholder="{{ 'employee.controls.department.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.department.errorTip' | translate }}">
+    </app-text-input>
+
+    <app-tree-select-input
+      formControlName="languages"
+      label="{{ 'employee.controls.languages.label' | translate }}"
+      placeholder="{{ 'employee.controls.languages.placeholder' | translate }}"
+      errorTip="{{ 'employee.controls.languages.errorTip' | translate }}">>
+    </app-tree-select-input>
+  </div>
+</form>

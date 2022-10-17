@@ -1,0 +1,23 @@
+<form nz-form [formGroup]="cvGeneralForm">
+  <app-text-input
+    formControlName="firstName"
+    label="{{ 'employee.general.firstName.label' | translate }}"
+    placeholder="{{ 'employee.general.firstName.placeholder' | translate }}"
+    errorTip="{{ 'employee.general.firstName.errorTip' | translate }}">
+  </app-text-input>
+
+  <app-text-input
+    formControlName="lastName"
+    label="{{ 'employee.general.lastName.label' | translate }}"
+    placeholder="{{ 'employee.general.lastName.placeholder' | translate }}"
+    errorTip="{{ 'employee.general.lastName.errorTip' | translate }}">
+  </app-text-input>
+
+  <app-text-input
+    formControlName="name"
+    label="{{ 'employee.general.name.label' | translate }}"
+    placeholder="{{ 'employee.general.name.placeholder' | translate }}"
+    errorTip="{{ 'employee.general.name.errorTip' | translate }}">
+  </app-text-input>
+
+</form>

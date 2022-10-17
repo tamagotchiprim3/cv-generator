@@ -1,0 +1,9 @@
+<form nz-form [formGroup]="cvResumeForm">
+  <app-textarea-input
+
+    formControlName="content"
+    label="{{ 'employee.resume.content.label' | translate }}"
+    placeholder="{{ 'employee.resume.content.placeholder' | translate }}"
+    errorTip="{{ 'employee.resume.content.errorTip' | translate }}">
+  </app-textarea-input>
+</form>

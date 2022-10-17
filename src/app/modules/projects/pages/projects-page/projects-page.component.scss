@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  background-color: white;
+  margin: 25px 25px 0px 25px;
+  overflow: auto;
+  position: relative;
+}
+
+.projects-add-action {
+  display: flex;
+  justify-content: flex-end;
+  margin: 25px 25px;
+}
+
+.spinner-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}

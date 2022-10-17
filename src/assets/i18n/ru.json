@@ -1,0 +1,265 @@
+{
+  "auth": {
+    "email": "Почта",
+    "password": "Пароль",
+    "rememberMe": "Запомнить меня",
+    "forgotPass": "Забыли пароль?",
+    "login": "Войти"
+  },
+  "core": {
+    "dashboard": "Панель инструментов",
+    "employees": "Сотрудники",
+    "projects": "Проекты",
+    "home": "Начальная страница"
+  },
+  "projects": {
+    "addProjects": "Создать",
+    "table": {
+      "header": [
+        "Имя",
+        "Фамилия",
+        "Размер команды",
+        "Специализации",
+        "Обязанности"
+      ]
+    },
+    "controls": {
+      "name": {
+        "label": "Имя",
+        "errorTip": "Укажите корректное имя",
+        "placeholder": "Введите ваше имя"
+      },
+      "secondName": {
+        "label": "Фамилия",
+        "errorTip": "Укажите корретную фамилию ",
+        "placeholder": "Введите вашу фамилию"
+      },
+      "startDate": {
+        "label": "Начальная дата",
+        "errorTip": "Укажите корретную начальную дату",
+        "placeholder": "Введите дату"
+      },
+      "endDate": {
+        "label": "Конечная дата",
+        "errorTip": "Укажите корретную конечную дату",
+        "placeholder": "Введите дату"
+      },
+      "teamSize": {
+        "label": "Размер команды",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите размер команды"
+      },
+      "description": {
+        "label": "Описание",
+        "errorTip": "Укажите описание",
+        "placeholder": "Введите описание"
+      },
+      "tasksPerformed": {
+        "label": "Кем выполнены задачи",
+        "errorTip": "Укажите, кем были выполнены задачи",
+        "placeholder": "Кто выполнил задачу"
+      },
+      "projectRoles": {
+        "label": "Роли в проекте",
+        "errorTip": "Укажите роли",
+        "placeholder": "Введите роли на проекте"
+      },
+      "specializations": {
+        "label": "Специализации",
+        "errorTip": "Укажите специализации",
+        "placeholder": "Введите специализации"
+      },
+      "responsibilities": {
+        "label": "Обязанности",
+        "errorTip": "Укажите обязанности",
+        "placeholder": "Введите обязанности"
+      }
+    }
+  },
+  "employee": {
+    "buttons": {
+      "addEmployee": "Создать"
+    },
+    "table": {
+      "header": ["Имя", "Фамилия", "Электронная почта", "Отдел", "Умения"]
+    },
+    "info": "Информация",
+    "cv": "Резюме",
+    "general": {
+      "formName": "Основная информация",
+      "firstName": {
+        "label": "Имя",
+        "errorTip": "Укажите корректное имя",
+        "placeholder": "Введите ваше имя"
+      },
+      "lastName": {
+        "label": "Фaмилия",
+        "errorTip": "Укажите корретную фамилию ",
+        "placeholder": "Введите вашу фамилию"
+      },
+      "name": {
+        "label": "Название",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите название"
+      }
+    },
+    "education": {
+      "formName": "Образование",
+      "establishment": {
+        "label": "Название ВУЗА",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите ваш ВУЗ"
+      },
+      "profession": {
+        "label": "Профессия",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите название"
+      }
+    },
+    "languages": {
+      "formName": "Языки",
+      "name": {
+        "label": "Язык",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите ваш язык"
+      },
+      "everydayReadingLevel": {
+        "label": "Навык чтения",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш навык чтения"
+      },
+      "everydayWritingLevel": {
+        "label": "Навык письма",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш навык письма"
+      },
+      "everydaySpeakingLevel": {
+        "label": "Разговорный навык",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш разговорный навык"
+      },
+      "professionalReadingLevel": {
+        "label": "Профессиональный навык чтения",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш навык чтения"
+      },
+      "professionalWritingLevel": {
+        "label": "Профессиональный навык письма",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш навык письма"
+      },
+      "professionalSpeakingLevel": {
+        "label": "Профессиональный разговорный навык",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Опишите ваш разговорный навык"
+      }
+    },
+    "resume": {
+      "formName": "Резюме",
+      "content": {
+        "label": "Содержание",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите содержание резюме"
+      }
+    },
+    "projects": {
+      "formName": "Проект"
+    },
+    "controls": {
+      "firstName": {
+        "label": "Имя",
+        "errorTip": "Укажите корректное имя",
+        "placeholder": "Введите ваше имя"
+      },
+      "lastName": {
+        "label": "Фамилия",
+        "errorTip": "Укажите корретную фамилию ",
+        "placeholder": "Введите вашу фамилию"
+      },
+      "password": {
+        "label": "Пароль",
+        "errorTip": "Укажите корректный пароль",
+        "placeholder": "Введите ваш пароль"
+      },
+      "email": {
+        "label": "Электронная почта",
+        "errorTip": "Укажите корретную почту",
+        "placeholder": "Введите вашу почту"
+      },
+      "institution": {
+        "label": "Институт",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите ваш институт"
+      },
+      "diplomaProfession": {
+        "label": "Профессия в дипломе",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите вашу профессию"
+      },
+      "skills": {
+        "label": "Умения",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите ваши умения"
+      },
+      "role": {
+        "label": "Роль",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Введите вашу роль"
+      },
+      "department": {
+        "label": "Отдел",
+        "errorTip": "Укажите корретный отдел",
+        "placeholder": "Введите ваш отдел"
+      },
+      "languages": {
+        "label": "Языки",
+        "errorTip": "Укажите корретные данные",
+        "placeholder": "Укажите ваши языки"
+      },
+      "selectProject": {
+        "label": "Выберите проект",
+        "errorTip": "Укажите корректный проект",
+        "placeholder": "Выберите ваш проект"
+      }
+    }
+  },
+  "buttons": {
+    "archive": "Архив",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "addProject": "Добавить проект",
+    "addLanguage": "Добавить язык",
+    "addEducation": "Добавить образование",
+    "downloadPDF": "Скачать PDF"
+  },
+  "homeBreadcrumb": {
+    "name": "Начальная страница",
+    "title": "Начальная страница",
+    "description": "Начальная страница"
+  },
+  "projectPageBreadcrumb": {
+    "name": "Проекты",
+    "title": "Список проектов",
+    "description": "все проекты в данной таблице"
+  },
+  "projectCreateBreadcrumb": {
+    "name": "Создать",
+    "title": "Создание проекта",
+    "description": "Страница создания проекта"
+  },
+  "employeesPageBreadcrumb": {
+    "name": "Работники",
+    "title": "Список работников",
+    "description": "все работники в данной таблице"
+  },
+  "employeesCreateBreadcrumb": {
+    "name": "Создать",
+    "title": "Создание работника",
+    "description": "Страница создания работника"
+  },
+  "dashboardPageBreadcrumb": {
+    "name": "Панель инструментов",
+    "title": "Панель инструментов",
+    "description": "панель инструментов"
+  }
+}

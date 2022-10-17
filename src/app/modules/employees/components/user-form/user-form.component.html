@@ -1,0 +1,11 @@
+<nz-tabset nzSize="large" class="">
+  <nz-tab [nzTitle]="'employee.info' | translate" *ngIf='isEdit'><app-info [dataForForm]="formData.userInfo"></app-info> </nz-tab>
+  <nz-tab [nzTitle]="'employee.info' | translate" *ngIf='!isEdit'><app-info></app-info> </nz-tab>
+  <nz-tab [nzTitle]="'employee.cv' | translate" *ngIf='isEdit'><app-cv [dataForForm]="formData.virtualCvData"></app-cv> </nz-tab>
+  <nz-tab [nzTitle]="'employee.cv' | translate" *ngIf='!isEdit'><app-cv></app-cv> </nz-tab>
+</nz-tabset>
+
+<div class="buttons">
+  <button nz-button nzType="primary" type="submit" (click)="submit()" >{{ 'buttons.save' | translate }}</button>
+  <button nz-button  (click)="cancel()">{{ 'buttons.cancel' | translate }}</button>
+</div>

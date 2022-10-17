@@ -1,0 +1,33 @@
+<div class="org-name">
+  <i nz-icon nzType="ant-design" nzTheme="outline"></i>
+  <Text nz-typography strong >Ant Design</Text>
+</div>
+
+<form nz-form [formGroup]="authForm" nzLayout="vertical" novalidate class="login-form">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please, input your email!">
+      <nz-form-label class="username-label">{{'auth.email' | translate}}</nz-form-label>
+      <input nz-input placeholder="Enter your email" class="input-control" type="email" formControlName="email">
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please, input your password!">
+      <nz-form-label>{{'auth.password' | translate}}</nz-form-label>
+      <input nz-input placeholder="Enter your password" class="input-control" type="password" formControlName="password">
+    </nz-form-control>
+  </nz-form-item>
+
+  <div class="login-form-buttons">
+    <label nz-checkbox >
+      {{'auth.rememberMe' | translate}}
+    </label>
+    <a>{{'auth.forgotPass' | translate}}</a>
+  </div>
+
+  <button nz-button nzType="primary" (click)="submit()">{{'auth.login' | translate}}</button>
+
+</form>
+
+
+

@@ -1,0 +1,28 @@
+
+  <div class="company-icon">
+      <img src="../../../../../assets/images/logo.png">
+      <span>Ant Design</span>
+  </div>
+
+
+  <button nz-button nzType="text" class="search-button">
+    <i nz-icon nzType="search" nzTheme="outline"></i>
+  </button>
+
+  <button nz-button nzType="text" class="help-button">
+    <i nz-icon nzType="question-circle" nzTheme="outline"></i>
+  </button>
+
+  <button nz-button nzType="text" class="notification-button">
+    <i nz-icon nzType="bell" nzTheme="outline"></i>
+  </button>
+
+  <button nz-button nzType="text" class="user-button" (click)="back()">
+    <i nz-icon nzType="user" nzTheme="outline"></i>
+    {{user}}
+  </button>
+
+  <button nz-button nzType="text" class="translate-button" (click)="changeLanguage()">
+    <img src="../../../../../assets/images/translate-btn.png">
+  </button>
+
